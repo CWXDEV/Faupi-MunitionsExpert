@@ -1,0 +1,8 @@
+{
+    "name": "Faupi-MunitionsExpert",
+    "author": "Faupi",
+    "version": "1.2.1",
+    "license": "NCSA Open Source",
+    "main": "./src/ammostats.js",
+    "akiVersion":  "2.1.1"
+}

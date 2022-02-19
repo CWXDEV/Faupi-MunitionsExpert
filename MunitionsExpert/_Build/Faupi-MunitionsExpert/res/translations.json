@@ -1,0 +1,137 @@
+{
+    "en": {
+        "DAMAGE": "Damage",
+        "PENETRATION": "Armor penetration",
+        "ARMOR DAMAGE": "Damage to armor",
+        "FRAGMENTATION CHANCE": "Fragmentation chance",
+        "RICOCHET CHANCE": "Ricochet chance",
+        "ME_class": "Class",
+        "ME_noarmor": "Unarmored"
+    },
+    "cz": {
+        "DAMAGE": "Poškození",
+        "PENETRATION": "Průbojnost",
+        "ARMOR DAMAGE": "Poškození brnění",
+        "FRAGMENTATION CHANCE": "Šance na fragmentaci",
+        "RICOCHET CHANCE": "Šance na odraz",
+        "ME_class": "Třída",
+        "ME_noarmor": "Neobrněný"
+    },
+    "pl": {
+        "DAMAGE": "Szkoda",
+        "PENETRATION": "Penetracja pancerza",
+        "ARMOR DAMAGE": "Uszkodzenie zbroi",
+        "FRAGMENTATION CHANCE": "Szansa na fragmentację",
+        "RICOCHET CHANCE": "Szansa na rykoszet",
+        "ME_class": "Klasa",
+        "ME_noarmor": "Nieumiejętny"
+    },
+    "po": {
+        "DAMAGE": "Dano",
+        "PENETRATION": "Penetração de armadura",
+        "ARMOR DAMAGE": "Danos à armadura",
+        "FRAGMENTATION CHANCE": "Chance de fragmentação",
+        "RICOCHET CHANCE": "Chance de ricochete",
+        "ME_class": "Classe",
+        "ME_noarmor": "Sem armadura"
+    },
+    "ch": {
+        "DAMAGE": "损坏",
+        "PENETRATION": "护甲穿透",
+        "ARMOR DAMAGE": "对盔甲的伤害",
+        "FRAGMENTATION CHANCE": "碎片机会",
+        "RICOCHET CHANCE": "跳弹机会",
+        "ME_class": "类",
+        "ME_noarmor": "无所作为"
+    },
+    "ru": {
+        "DAMAGE": "Повреждать",
+        "PENETRATION": "Бронепробиваемость",
+        "ARMOR DAMAGE": "Повреждение брони",
+        "FRAGMENTATION CHANCE": "Вероятность фрагментации",
+        "RICOCHET CHANCE": "Шанс рикошета",
+        "ME_class": "Класс",
+        "ME_noarmor": "Без оружия"
+    },
+    "es": {
+        "DAMAGE": "Daño",
+        "PENETRATION": "Penetración de armadura",
+        "ARMOR DAMAGE": "Daño a la armadura",
+        "FRAGMENTATION CHANCE": "Posibilidad de fragmentación",
+        "RICOCHET CHANCE": "Oportunidad de rebote",
+        "ME_class": "Clase",
+        "ME_noarmor": "Sin armadura"
+    },
+    "es-mx": {
+        "DAMAGE": "Daño",
+        "PENETRATION": "Penetración de armadura",
+        "ARMOR DAMAGE": "Daño a la armadura",
+        "FRAGMENTATION CHANCE": "Posibilidad de fragmentación",
+        "RICOCHET CHANCE": "Oportunidad de rebote",
+        "ME_class": "Clase",
+        "ME_noarmor": "Sin armadura"
+    },
+    "ge": {
+        "DAMAGE": "Schaden",
+        "PENETRATION": "Rüstungsdurchdringung",
+        "ARMOR DAMAGE": "Beschädigung der Rüstung",
+        "FRAGMENTATION CHANCE": "Fragmentierung Chance",
+        "RICOCHET CHANCE": "Querschläger-Chance",
+        "ME_class": "Klasse",
+        "ME_noarmor": "Ungepanzert"
+    },
+    "sk": {
+        "DAMAGE": "Poškodenie",
+        "PENETRATION": "Prienik do brnenia",
+        "ARMOR DAMAGE": "Poškodenie brnenia",
+        "FRAGMENTATION CHANCE": "Šanca na fragmentáciu",
+        "RICOCHET CHANCE": "Šanca na odraz",
+        "ME_class": "Trieda",
+        "ME_noarmor": "Neozbrojený"
+    },
+    "tu": {
+        "DAMAGE": "Hasar",
+        "PENETRATION": "Zırh penetrasyon",
+        "ARMOR DAMAGE": "Zırhta hasar",
+        "FRAGMENTATION CHANCE": "Parçalanma şansı",
+        "RICOCHET CHANCE": "Sekme şansı",
+        "ME_class": "Sınıf",
+        "ME_noarmor": "zırhsız"
+    },
+    "it": {
+        "DAMAGE": "Danno",
+        "PENETRATION": "Penetrazione dell'armatura",
+        "ARMOR DAMAGE": "Danni all'armatura",
+        "FRAGMENTATION CHANCE": "Possibilità di frammentazione",
+        "RICOCHET CHANCE": "Possibilità di rimbalzo",
+        "ME_class": "Classe",
+        "ME_noarmor": "Disarmato"
+    },
+    "jp": {
+        "DAMAGE": "ダメージ",
+        "PENETRATION": "装甲貫通",
+        "ARMOR DAMAGE": "鎧の損傷",
+        "FRAGMENTATION CHANCE": "断片化の可能性",
+        "RICOCHET CHANCE": "跳ね返るチャンス",
+        "ME_class": "クラス",
+        "ME_noarmor": "無装甲"
+    },
+    "fr": {
+        "DAMAGE": "Dommage",
+        "PENETRATION": "Pénétration d'armure",
+        "ARMOR DAMAGE": "Dommages à l'armure",
+        "FRAGMENTATION CHANCE": "Chance de fragmentation",
+        "RICOCHET CHANCE": "Chance de ricochet",
+        "ME_class": "Classe",
+        "ME_noarmor": "Sans armure"
+    },
+    "hu": {
+        "DAMAGE": "Kár",
+        "PENETRATION": "Páncélátütő",
+        "ARMOR DAMAGE": "A páncél sérülése",
+        "FRAGMENTATION CHANCE": "Töredezettség esélye",
+        "RICOCHET CHANCE": "Ricochet esély",
+        "ME_class": "Osztály",
+        "ME_noarmor": "Fegyvertelen"
+    }
+}
