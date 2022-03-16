@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MunitionsExpert</RootNamespace>
-    <AssemblyName>MunitionsExpert</AssemblyName>
+    <AssemblyName>Faupi-MunitionsExpert</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -57,22 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Aki.Build">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\Aki.Build.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Aki.Common">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\Aki.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\Aki.Common.dll</HintPath>
     </Reference>
     <Reference Include="Aki.Reflection">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\Aki.Reflection.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\Aki.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="Comfort">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -81,19 +81,19 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>..\..\..\..\..\..\AKI PROJECT\client 16584 - aki 2.2.1\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\AKI PROJECT\AKI 2.3.0 17107 Bepin\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

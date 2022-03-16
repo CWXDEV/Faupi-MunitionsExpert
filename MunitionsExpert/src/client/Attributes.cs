@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MunitionsExpert
+﻿namespace MunitionsExpert
 {
     public static class Attributes
     {

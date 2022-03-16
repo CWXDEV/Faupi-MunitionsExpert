@@ -2,22 +2,30 @@
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
-using Aki.Common.Utils;
 using EFT.InventoryLogic;
 using UnityEngine.Networking;
 using System.Threading.Tasks;
+using BepInEx;
 using Comfort.Common;
 
-using ItemAttribute = GClass2101;
-using ItemAttributeCharacteristic = GClass2103; // left in as commented code uses this class
+using ItemAttribute = GClass2090;
+using ItemAttributeCharacteristic = BulletClass; // left in as commented code uses this class
 using static MunitionsExpert.Attributes;
-using ServerSettings = GClass1115;
+using ServerSettings = GClass1103;
 
 
 namespace MunitionsExpert
 {
-    public class MunitionsExpert
+    [BepInPlugin("com.FAUPI.MunitionsExpert", "FAUPI-MunitionsExpert", "1.4.0")]
+    public class MunitionsExpert : BaseUnityPlugin
     {
+        private void Awake()
+        {
+            new CachedAttributesPatch().Enable();
+            new StaticIconsPatch().Enable();
+            CacheIcons();
+        }
+
         private static ModInformation _modInfo;
         public static ModInformation ModInfo
         {
@@ -36,14 +44,7 @@ namespace MunitionsExpert
         public static Dictionary<Enum, Sprite> iconCache = new Dictionary<Enum, Sprite>();
         public static List<ItemAttribute> penAttributes = new List<ItemAttribute>();    // For refreshing armor class rating
         public static string modName = ModInfo.name;
-
-        private static void Main()
-        {
-            new CachedAttributesPatch().Enable();
-            new StaticIconsPatch().Enable();
-            CacheIcons();
-        }
-
+        
         public static void CacheIcons()
         {
             iconCache.Add(ENewItemAttributeId.Damage, Resources.Load<Sprite>("characteristics/icons/icon_info_damage"));
@@ -66,71 +67,19 @@ namespace MunitionsExpert
 
                 if (uwr.responseCode != 200)
                 {
-                    Log.Error($"[{modName}] Request error {uwr.responseCode}: {uwr.error}");
+                    //Log.Error($"[{modName}] Request error {uwr.responseCode}: {uwr.error}");
                 }
                 else
                 {
                     // Get downloaded asset bundle
-                    Log.Info($"[{modName}] Retrieved texture! {id.ToString()} from {path}");
+                    //Log.Info($"[{modName}] Retrieved texture! {id.ToString()} from {path}");
                     Texture2D cachedTexture = DownloadHandlerTexture.GetContent(uwr);
                     iconCache.Add(id, Sprite.Create(cachedTexture, new Rect(0, 0, cachedTexture.width, cachedTexture.height), new Vector2(0, 0)));
                 }
             }
         }
 
-        //public static string RemoveSpaceBetweenValueAndPercent(string str)
-        //{
-        //    return Regex.Replace(str, "(?<=[0-9]+)\\ (?=%)", string.Empty);
-        //}
-
-        //public static void FormatExistingAttributes(ref List<ItemAttribute> attributes, AmmoTemplate template)
-        //{
-        //    if (attributes == null || template == null) return;
-
-        //    for (int i = 0; i < attributes.Count; i++)
-        //    {
-        //        ItemAttribute attr = attributes[i];
-        //        if (attr == null) continue;
-
-        //        if ((EItemAttributeId)attr.Id == EItemAttributeId.CenterOfImpact)
-        //        {
-        //            float num = template.ammoAccr;
-        //            (attr as ItemAttributeCharacteristic).LessIsGood = false; // More accuracy = better
-        //            attr.LabelVariations = EItemAttributeLabelVariations.Colored; // Red if bad, green if good
-        //            attr.StringValue = () => $"{num}%"; // Pointless but at least it'll be consistent lol
-        //        }
-        //        else if ((EItemAttributeId)attr.Id == EItemAttributeId.Recoil)
-        //        {
-        //            float num = template.ammoRec;
-        //            (attr as ItemAttributeCharacteristic).LessIsGood = true; //Less recoil = better
-        //            attr.LabelVariations = EItemAttributeLabelVariations.Colored; //Red if bad, green if good
-        //            attr.StringValue = () => $"{num}%"; // Missing percent sign
-        //        }
-        //        else if ((EItemAttributeId)attr.Id == EItemAttributeId.DurabilityBurn)
-        //        {
-        //            float num = (template.DurabilityBurnModificator - 1f) * 100f;
-        //            if(attr as ItemAttributeCharacteristic == null)
-        //            {
-        //                ItemAttributeCharacteristic attrChar = new ItemAttributeCharacteristic((EItemAttributeId)attr.Id);
-        //                attrChar.CopyFrom(attr);
-        //                attr = attrChar;
-        //            }
-
-        //            (attr as ItemAttributeCharacteristic).LessIsGood = true; //Less burn = better
-
-        //            attr.Base = () => (template.DurabilityBurnModificator - 1f);
-        //            attr.LabelVariations = EItemAttributeLabelVariations.Colored; //Red if bad, green if good
-        //            attr.StringValue = () => $"{num}%"; // Missing percent sign
-        //        }
-
-        //        string str = RemoveSpaceBetweenValueAndPercent(attr.StringValue());
-        //        attr.StringValue = () => str;
-
-        //        attributes[i] = attr;
-        //    }
-        //}
-
-        static public void AddNewAttributes(ref List<ItemAttribute> attributes, AmmoTemplate template)
+        public static void AddNewAttributes(ref List<ItemAttribute> attributes, AmmoTemplate template)
         {
             int projCount = template.ProjectileCount;
             int totalDamage = template.Damage * template.ProjectileCount;
@@ -169,7 +118,7 @@ namespace MunitionsExpert
                     int ratedClass = 0;
 
                     if (!Singleton<ServerSettings>.Instantiated) { return $"CLASS_DATA_MISSING {template.PenetrationPower.ToString()}"; }
-                    ServerSettings.GClass1160.GClass1161[] classes = Singleton<ServerSettings>.Instance.Armor.ArmorClass;
+                    ServerSettings.GClass1148.GClass1149[] classes = Singleton<ServerSettings>.Instance.Armor.ArmorClass;
                     for (int i = 0; i < classes.Length; i++)
                     {
                         if (classes[i].Resistance > template.PenetrationPower) continue;
